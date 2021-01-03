@@ -1,0 +1,40 @@
+$white: 			#fff;
+$offwhite: 			#f8f9fa;
+$grey_light: 		#e9ecef;
+$grey_medium: 		#ced4da;
+$grey_medium_dark: 	#868e96;
+$grey_dark: 		#495057;
+$dark:  			#212529;
+$black: 			#000;
+
+/* Color Theme Swatches in Hex */
+$Retro-Rocket-1: #CED3D2;
+$Retro-Rocket-2: #006D6F;
+$Retro-Rocket-3: #C46D5D;
+$Retro-Rocket-4: #EC9E68;
+$Retro-Rocket-5: #C64036;
+
+
+// Define branding
+$primary-color:            	$Retro-Rocket-5;
+$secondary-color:          	$Retro-Rocket-4;
+$default-background-color: 	lighten( $Retro-Rocket-1, 5 );
+$default-text-color:       	$dark;
+$default-link-color:       	$Retro-Rocket-2;
+$default-link-color-hover: 	darken( $Retro-Rocket-2, 20 );
+$inverse-background-color: 	$dark;
+$inverse-text-color:       	$Retro-Rocket-1;
+$inverse-link-color:       	$Retro-Rocket-4;
+$inverse-link-color-hover: 	lighten( $Retro-Rocket-4, 20 );
+
+$header-background-color: 	$Retro-Rocket-4;
+$header-nav-background: 	transparent;
+$header-nav-link-color:		$white;
+$header-nav-link-background:$Retro-Rocket-5;
+$header-nav-link-hover-color:$Retro-Rocket-5;
+$header-nav-link-hover-background:$Retro-Rocket-1;
+
+$footer-background-color:  	$Retro-Rocket-2;
+$footer-text-color:			$Retro-Rocket-1;
+$footer-link-color:			$Retro-Rocket-4;
+$footer-link-color-hover: 	lighten( $Retro-Rocket-4, 20 );

@@ -1,0 +1,39 @@
+$white: 			#fff;
+$offwhite: 			#f8f9fa;
+$grey_light: 		#e9ecef;
+$grey_medium: 		#ced4da;
+$grey_medium_dark: 	#868e96;
+$grey_dark: 		#495057;
+$dark:  			#212529;
+$black: 			#000;
+
+/* Color Theme Swatches in Hex */
+$Bold-n-blue-1: #2E3140;
+$Bold-n-blue-2: #455473;
+$Bold-n-blue-3: #FFE45E;
+$Bold-n-blue-4: #E8E5DA;
+$Bold-n-blue-5: #F53E00;
+
+// Define branding
+$primary-color:            	$Bold-n-blue-5; //red
+$secondary-color:          	$Bold-n-blue-3; //yellow
+$default-background-color: 	$Bold-n-blue-4; //white-ish
+$default-text-color:       	$Bold-n-blue-1; //dark blue
+$default-link-color:       	$Bold-n-blue-5; //medium blue
+$default-link-color-hover: 	darken( $Bold-n-blue-5, 20 );
+$inverse-background-color: 	$Bold-n-blue-1;
+$inverse-text-color:       	$Bold-n-blue-4;
+$inverse-link-color:       	$Bold-n-blue-3;
+$inverse-link-color-hover: 	lighten( $Bold-n-blue-3, 20 );
+
+$header-background-color: 	$Bold-n-blue-2;
+$header-nav-background: 	$Bold-n-blue-1;
+$header-nav-link-color:		$Bold-n-blue-3;
+$header-nav-link-background:$Bold-n-blue-1;
+$header-nav-link-hover-color:$Bold-n-blue-1;
+$header-nav-link-hover-background:$Bold-n-blue-5;
+
+$footer-background-color:  	$Bold-n-blue-1;
+$footer-text-color:			lighten( $Bold-n-blue-2, 20 );
+$footer-link-color:			$Bold-n-blue-3;
+$footer-link-color-hover: 	lighten( $Bold-n-blue-3, 10 );
