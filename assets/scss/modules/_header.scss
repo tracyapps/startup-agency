@@ -1,9 +1,9 @@
 .site-header {
-	background: $header-background-color;
+	background: var(--header-background-color);
 
 
 	.main-navigation {
-		background: $header-nav-background;
+		background: var(--header-nav-background);
 
 		text-transform: uppercase;
 

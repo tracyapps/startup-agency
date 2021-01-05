@@ -379,9 +379,9 @@ input[type="submit"] {
   margin: 0 0 0 -5px; }
 
 .site-header {
-  background: #455473; }
+  background: var(--header-background-color); }
   .site-header .main-navigation {
-    background: #2E3140;
+    background: var(--header-nav-background);
     text-transform: uppercase; }
     .site-header .main-navigation .mobile-menu-toggle {
       display: none; }
