@@ -57,3 +57,21 @@
 
 </header> <!-- / .site-header -->
 <div class="site-content">
+
+<?php
+if( has_post_thumbnail() ) :
+	$featuredimage = get_the_post_thumbnail_url( get_the_ID(), 'full' );
+	$alt_text = get_post_meta( $thumbnail->ID, '_wp_attachment_image_alt', true );
+
+	printf(
+		'
+			<div class="page_featured_image_container">
+				<img src="%s" class="page_featured_image" alt="%s" />
+			</div>
+			',
+		esc_url( $featuredimage ),
+		esc_html( $alt_text )
+	);
+
+endif;
+?>

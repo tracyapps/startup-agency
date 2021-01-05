@@ -150,3 +150,24 @@
 		}
 	}
 }
+
+.page_featured_image_container {
+	width: 100%;
+	position: relative;
+	z-index: -1;
+	margin-bottom: -10em;
+
+	img.page_featured_image {
+		width: 100%;
+		max-height: 30vh;
+		object-fit: cover;
+	}
+
+	+ #content {
+		.page-title {
+			background: rgba( $default-background-color, 0.65 );
+			border-radius: 10px 10px 0 0;
+		}
+	}
+
+}
