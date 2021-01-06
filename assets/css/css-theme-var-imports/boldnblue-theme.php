@@ -8,7 +8,7 @@
 <style rel="stylesheet" type="text/css">
 	:root {
 		--header_background_color:		#455473;
-		--header_text_color:			#1864ab;
+		--header_text_color:			#FFE45E;
 		--top_nav_bar_background:		#2E3140;
 		--nav_item_background_color:	#2E3140;
 		--nav_item_text_color:			#FFE45E;
