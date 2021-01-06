@@ -58,6 +58,28 @@
 	}
 }
 
+@mixin dynamic-button-code(
+	$background: var(--primary_button_background_color),
+	$text: var(--primary_button_text_color),
+	$background-hover: var(--primary_button_hover_background_color),
+	$text-hover: var(--primary_button_hover_text_color)
+	 ) {
+	background: $background;
+	padding: $default-button-padding;
+	text-align: center;
+	text-decoration: none;
+	color: $text !important;
+	border-radius: $border-radius;
+	display: inline-block;
+	transition: all $transition-speed ease-in-out;
+
+	&:hover,
+	&:focus,
+	&:visited:hover {
+		background: $background-hover;
+		color: $text-hover !important;
+	}
+}
 
 @mixin inverse-colors(
 		$text: $inverse-text-color,

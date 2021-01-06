@@ -24,14 +24,7 @@
 
 	<link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>">
 
-	<style type="text/css" rel="stylesheet">
-		:root {
-			--header-background-color: #0f0;
-			--header-nav-background: #f00;
-			--transition-speed: 300ms;
-			--max-page-width: 900px;
-		}
-	</style>
+	<?php include( 'assets/css/css-theme-var-imports/default-theme.php' ); ?>
 	<?php wp_head(); ?>
 
 

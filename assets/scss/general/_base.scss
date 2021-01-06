@@ -14,11 +14,11 @@ html {
 }
 
 body {
-	font-size: $base-font-size;
+	font-size: var(--body_text_default_size);
 	margin: 0;
-	background-color: $default-background-color;
-	color: $default-text-color;
-	font-family: $body-font;
+	background-color: var(--page_background_color);
+	color: var(--page_text_color);
+	font-family: var(--body_text_font);
 	font-style: normal;
 	font-weight: 300;
 	max-width: 100vw;
@@ -49,14 +49,13 @@ body {
 }
 
 a {
-	color: $default-link-color;
+	color: var(--page_link_color);
 	transition: all $transition-speed ease-in-out;
 
 	&:hover,
 	&:focus,
 	&:active {
-		color: $default-link-color-hover;
-		//border-bottom: 1px solid $default-link-color-hover;
+		color: var(--page_link_hover_color);
 	}
 }
 
@@ -99,7 +98,7 @@ blockquote {
 .button,
 input[type="submit"],
 button {
-	@include button-primary;
+	@include dynamic-button-code;
 
 
 	&.full {
@@ -107,6 +106,16 @@ button {
 		text-align: center;
 	}
 
+}
+
+.wp-block-button__link {
+	background: var(--primary_button_background_color);
+	color: var(--primary_button_text_color);
+
+	&:hover {
+		background: var(--primary_button_hover_background_color);
+		color: var(--primary_button_hover_text_color);
+	}
 }
 
 .learn-more-button {
@@ -135,7 +144,7 @@ h2,
 h3,
 h4,
 h5 {
-	font-family: $header-font;
+	font-family: var(--page_heading_text_font);
 	font-weight: 300;
 	text-transform: capitalize;
 	margin-bottom: 0.3em;

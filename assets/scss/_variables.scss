@@ -80,9 +80,9 @@ $header-nav-link-background:$blue_light;
 $header-nav-link-hover-color:$blue_light;
 $header-nav-link-hover-background:$blue_dark;
 $footer-background-color:  	$dark;
-$footer-text-color:			$offwhite;
+$footer-text-color:			$grey_medium;
 $footer-link-color:			$blue_light;
-$footer-link-color-hover: 	$offwhite;
+$footer-link-color-hover: 	$grey_medium;
 
 // Define elements
 
@@ -93,6 +93,41 @@ $button-text-color:             $white;
 $button-text-color-hover:       $white;
 $default-button-padding:        1rem 2rem;
 
+
+// ---------------- 01. Theme design variables --DEFAULTS--
+
+$header_background_color:		$white;
+$header_text_color:				$blue_dark;
+$top_nav_bar_background:		transparent;
+$nav_item_background_color:		$blue_light;
+$nav_item_text_color:			$blue_dark;
+$nav_item_hover_background_color:$blue_dark;
+$nav_item_hover_text_color:		$blue_light;
+$nav_item_font:					'Work Sans', sans-serif;
+
+$page_background_color:			$white;
+$page_text_color:				$dark;
+$page_link_color:				$blue_dark;
+$page_link_hover_color:			$violet_dark;
+$body_text_font:				'Work Sans', sans-serif;
+$body_text_default_size:		20px;
+$page_heading_text_font:		'Josefin Slab', serif;
+$page_heading_text_font_weight: light;
+
+$primary_button_background_color:$orange_dark;
+$primary_button_text_color:		$white;
+$primary_button_hover_background_color:$pink_dark;
+$primary_button_hover_text_color:$white;
+
+$secondary_button_background_color:$blue_medium;
+$secondary_button_text_color:		$white;
+$secondary_button_hover_background_color:$teal_medium;
+$secondary_button_hover_text_color:$white;
+
+$footer_background_color:		$dark;
+$footer_text_color:				$offwhite;
+$footer_link_color:				$blue_light;
+$footer_link_hover_color:		$offwhite;
 
 // ---------------- 02. Grid, layout & breakpoints
 

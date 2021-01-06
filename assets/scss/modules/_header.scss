@@ -1,11 +1,11 @@
 .site-header {
-	background: var(--header-background-color);
+	background: var(--header_background_color);
 
 
 	.main-navigation {
-		background: var(--header-nav-background);
-
-		text-transform: uppercase;
+		background: var(--top_nav_bar_background);
+		font-family: var(--nav_item_font);
+		//text-transform: uppercase;
 
 
 		.mobile-menu-toggle {
@@ -38,15 +38,15 @@
 					justify-content: center;
 					align-items: center;
 					padding: 0.5em 2em;
-					background: $header-nav-link-background;
-					color: $header-nav-link-color;
+					background: var(--nav_item_background_color);
+					color: var(--nav_item_text_color);
 
 					&:hover,
 					&:focus,
 					&:active,
 					&:target {
-						background: $header-nav-link-hover-background;
-						color: $header-nav-link-hover-color;
+						background: var(--nav_item_hover_background_color);
+						color: var(--nav_item_hover_text_color);
 					}
 				}
 
@@ -61,8 +61,8 @@
 				a {
 					display: block;
 					text-decoration: none;
-					background: $header-nav-link-background;
-					color: $header-nav-link-color;
+					background: var(--nav_item_background_color);
+					color: var(--nav_item_text_color);
 					padding: 0.5em 2em;
 				}
 
@@ -136,7 +136,7 @@
 		.site-header {
 			.main-navigation {
 				ul {
-					background-color: rgba( $header-background-color, 0 );
+					background-color: var(--top_nav_bar_background);
 
 					a {
 
@@ -155,7 +155,7 @@
 	width: 100%;
 	position: relative;
 	z-index: -1;
-	margin-bottom: -10em;
+	margin-bottom: -8em;
 
 	img.page_featured_image {
 		width: 100%;
@@ -165,7 +165,7 @@
 
 	+ #content {
 		.page-title {
-			background: rgba( $default-background-color, 0.65 );
+			background: var(--page_background_color);
 			border-radius: 10px 10px 0 0;
 		}
 	}
