@@ -18,50 +18,51 @@ $color_theme_list = array (
 );
 
 $nav_font_choices = array(
-	'Roboto:wght@500' => 'Roboto',
-	'Montserrat:wght@400' => 'Montserrat',
-	'Poppins:wght@500' => 'Poppins',
-	'Barlow+Condensed:wght@500' => 'Barlow Condensed',
-	'Hind:wght@500' => 'Hind',
-	'Josefin+Slab:wght@500' => 'Josefin Slab',
-	'Noto+Serif:wght@700' => 'Noto Serif',
-	'Walter+Turncoat' => 'Walter Turncoat',
+	'Roboto:wght@500' => '"Roboto", sans-serif',
+	'Montserrat:wght@400' => '"Montserrat", sans-serif',
+	'Poppins:wght@500' => '"Poppins", sans-serif',
+	'Barlow+Condensed:wght@500' => '"Barlow Condensed", sans-serif',
+	'Hind:wght@500' => '"Hind", sans-serif',
+	'Trispace:wght@400' => '"Trispace", sans-serif',
+	'Josefin+Slab:wght@500' => '"Josefin Slab", serif',
+	'Noto+Serif:wght@700' => '"Noto Serif", serif',
+	'Walter+Turncoat' => '"Walter Turncoat", cursive',
 );
 
 $heading_font_choices = array(
-	'Roboto:ital,wght@0,100;0,700;1,100;1,700' => 'Roboto',
-	'Work+Sans:ital,wght@0,200;0,800;1,200;1,800' => 'Work Sans',
-	'Poppins:ital,wght@0,200;0,700;1,200;1,700' => 'Poppins',
-	'Barlow+Condensed:ital,wght@0,200;0,700;1,200;1,700' => 'Barlow Condensed',
-	'Hind:wght@300;700' => 'Hind',
-	'Trispace:wght@200;400;800' => 'Trispace',
-	'Cormorant+Garamond:ital,wght@0,300;0,700;1,300;1,700' => 'Cormorant Garamond',
-	'Josefin+Slab:ital,wght@0,200;0,700;1,200;1,700' => 'Josefin Slab',
-	'Architects+Daughter' => 'Architects Daughter',
-	'Gaegu:wght@300;700' => 'Gaegu',
-	'Nanum+Pen+Script' => 'Nanum Pen Script',
+	'Roboto:ital,wght@0,100;0,700;1,100;1,700' => '"Roboto", sans-serif',
+	'Work+Sans:ital,wght@0,200;0,800;1,200;1,800' => '"Work Sans", sans-serif',
+	'Poppins:ital,wght@0,200;0,700;1,200;1,700' => '"Poppins", sans-serif',
+	'Barlow+Condensed:ital,wght@0,200;0,700;1,200;1,700' => '"Barlow Condensed", sans-serif',
+	'Hind:wght@300;700' => '"Hind", sans-serif',
+	'Trispace:wght@200;800' => '"Trispace", sans-serif',
+	'Cormorant+Garamond:ital,wght@0,300;0,700;1,300;1,700' => '"Cormorant Garamond", serif',
+	'Josefin+Slab:ital,wght@0,200;0,700;1,200;1,700' => '"Josefin Slab", serif',
+	'Architects+Daughter' => '"Architects Daughter", cursive',
+	'Gaegu:wght@300;700' => '"Gaegu", cursive',
+	'Nanum+Pen+Script' => '"Nanum Pen Script", cursive',
 );
 
 $body_font_choices = array(
-	'Roboto:ital,wght@0,300;0,900;1,300;1,900' => 'Roboto',
-	'Work+Sans:ital,wght@0,300;0,800;1,300;1,800' => 'Work Sans',
-	'Montserrat:ital,wght@0,300;0,800;1,300;1,800' => 'Montserrat',
-	'Poppins:ital,wght@0,300;0,800;1,300;1,800' => 'Poppins',
-	'Noto+Serif:ital,wght@0,400;0,700;1,400;1,700' => 'Noto Serif',
-	'Cormorant+Garamond:ital,wght@0,500;0,700;1,500;1,700' => 'Cormorant Garamond',
-	'Josefin+Slab:ital,wght@0,400;0,700;1,400;1,700' => 'Josefin Slab',
-	'Gaegu:wght@400;700' => 'Gaegu',
+	'Roboto:ital,wght@0,300;0,900;1,300;1,900' => '"Roboto", sans-serif',
+	'Work+Sans:ital,wght@0,300;0,800;1,300;1,800' => '"Work Sans", sans-serif',
+	'Montserrat:ital,wght@0,300;0,800;1,300;1,800' => '"Montserrat", sans-serif',
+	'Poppins:ital,wght@0,300;0,800;1,300;1,800' => '"Poppins", sans-serif',
+	'Noto+Serif:ital,wght@0,400;0,700;1,400;1,700' => '"Noto Serif", serif',
+	'Cormorant+Garamond:ital,wght@0,500;0,700;1,500;1,700' => '"Cormorant Garamond", serif',
+	'Josefin+Slab:ital,wght@0,400;0,700;1,400;1,700' => '"Josefin Slab", serif',
+	'Gaegu:wght@400;700' => '"Gaegu", cursive',
 );
 
 // settings on where the 'sections' are active throughout the site
 $where_sections_are_active = array (
-	array (
-		array (
-			'param' => 'post_type',
-			'operator' => '==',
-			'value' => 'portfolio',
-		),
-	),
+		/*array (
+			array (
+				'param' => 'post_type',
+				'operator' => '==',
+				'value' => 'portfolio',
+			),
+		),*/
 /*	add any additional post types here. */
 	array (
 		array (
@@ -1577,6 +1578,27 @@ Make sure this text color is readable on your header background color',
 				'default_value' => '',
 				'placeholder' => '',
 			),
+
+			array (
+				'key' => 'field_1234590bf43332640',
+				'label' => 'Service(s) provided / Project role',
+				'name' => 'portfolio_services_provided',
+				'type' => 'textarea',
+				'instructions' => '',
+				'required' => 0,
+				'conditional_logic' => 0,
+				'wrapper' => array (
+					'width' => '',
+					'class' => '',
+					'id' => '',
+				),
+				'default_value' => '',
+				'placeholder' => '',
+				'prepend' => '',
+				'append' => '',
+				'maxlength' => '',
+				'rows' => 5,
+			),
 			array (
 				'key' => 'field_590bf43332640',
 				'label' => 'Date completed',
@@ -1596,43 +1618,7 @@ Make sure this text color is readable on your header background color',
 				'append' => '',
 				'maxlength' => '',
 			),
-			array (
-				'key' => 'field_590fed8969912',
-				'label' => 'Page background',
-				'name' => 'page_background',
-				'type' => 'select',
-				'instructions' => '',
-				'required' => 0,
-				'conditional_logic' => 0,
-				'wrapper' => array (
-					'width' => '',
-					'class' => '',
-					'id' => '',
-				),
-				'choices' => array (
-					'none' => 'No background',
-					'pattern-grey-1' => 'Grey, with large arrows',
-					'pattern-green' => 'Green',
-					'pattern-purple' => 'Purple',
-					'pattern-teal' => 'Teal',
-					'pattern-dark-blue' => 'Dark blue',
-					'pattern-orange' => 'Orange',
-					'pattern-grey-2' => 'Grey, with multi-colored lines',
-					'pattern-gold' => 'Gold',
-					'pattern-light' => 'Light',
-					'pattern-light-blue' => 'Light blue',
-					'granite-texture' => 'Granite',
-				),
-				'default_value' => array (
-					0 => 'none',
-				),
-				'allow_null' => 0,
-				'multiple' => 0,
-				'ui' => 0,
-				'ajax' => 0,
-				'return_format' => 'value',
-				'placeholder' => '',
-			),
+
 			array (
 				'key' => 'field_598de22892389',
 				'label' => 'Featured image frame',
@@ -1649,7 +1635,6 @@ Make sure this text color is readable on your header background color',
 				'choices' => array (
 					'no-frame' => 'No frame',
 					'browser-frame' => 'Browser frame',
-					'browser-frame-no-url' => 'Browser frame, with no URL area',
 					'video-frame' => 'Video frame',
 					'photo-frame' => 'Photo / print work frame',
 				),

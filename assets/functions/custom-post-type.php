@@ -76,7 +76,7 @@ function start_custom_post_types() {
 				'parent_item_colon' => ''
 			),
 			/* end of arrays */
-			'description' => __( 'All the awesome things we made', 'start' ),
+			'description' => __( 'Our Portfolio', 'start' ),
 			'public' => true,
 			'publicly_queryable' => true,
 			'exclude_from_search' => false,
@@ -85,14 +85,14 @@ function start_custom_post_types() {
 			'menu_position' => 4,
 			'menu_icon' => 'dashicons-portfolio',
 			'rewrite' => array(
-				'slug' => 'work',
-				'with_front' => false
+				'slug' => 'work'
 			),
 			/* you can specify its url slug */
 			'has_archive' => 'work',
 			/* you can rename the slug here */
 			'capability_type' => 'post',
 			'hierarchical' => false,
+			'show_in_rest' => true, // activate block editor.
 			/* the next one is important, it tells what's enabled in the post editor */
 			'supports' => array(
 				'title',

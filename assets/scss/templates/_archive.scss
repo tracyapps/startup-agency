@@ -1,0 +1,292 @@
+.taxonomy-description {
+	text-align: center;
+	font-size: 110%;
+}
+.archive-featured {
+	margin: 2em 0;
+
+	@include tablet-up {
+		display: flex;
+		flex-wrap: wrap;
+		width: 100%;
+		justify-items: center;
+		align-items: stretch;
+	}
+
+	.featured-item-container {
+		@include tablet-up {
+			min-width: 49vw;
+			padding: 0;
+			flex: 1;
+		}
+	}
+
+	.archive-item {
+		width: 90%;
+		margin: 0 auto;
+		max-width: 800px;
+		height: 100%;
+
+
+		a {
+			text-decoration: none;
+			color: var(--page_link_color);
+			display: block;
+			height: 100%;
+
+			&:hover {
+				color: var(--page_link_hover_color);
+
+				.featured-image {
+
+					img {
+						-webkit-filter: brightness(1.2) saturate(1.5) opacity(1);
+						filter: brightness(1.2) saturate(1.5) opacity(1);
+						//-webkit-transition: image-filter-animation 500ms 1;
+						animation: image-filter-animation 500ms 1;
+
+					}
+				}
+			}
+		}
+
+		object {
+			display: flex;
+			align-items: flex-end;
+			flex-direction: row;
+			height: 100%;
+
+			> section {
+
+				&.featured-image {
+					width: 75%;
+					height: 100%;
+
+					img {
+						-webkit-filter: brightness(1) saturate(1) opacity(1);
+						filter: brightness(1) saturate(1) opacity(1);
+						min-height: 70%;
+						min-width: 90%;
+						object-fit: cover;
+					}
+				}
+
+				&.entry-text {
+					position: relative;
+					width: 25%;
+
+					span {
+						position: absolute;
+						z-index: 100;
+						bottom: 0;
+						right: 0;
+						width: 175%;
+						display: block;
+
+					}
+
+
+					h2 {
+						margin: 0;
+						padding: 0;
+						line-height: 1.1;
+						//font-size: 3.5rem;
+					}
+
+					.portfolio-subtitle {
+						text-align: left;
+						padding-right: 0.5rem;
+					}
+
+					h2,
+					h3 {
+						display: inline-block;
+						background: var(--page_background_color);
+						padding: 0.5rem 1rem;
+						text-shadow: none;
+					}
+				}
+			}
+		}
+	}
+
+	.featured-item {
+		padding: 2rem 0;
+		margin-bottom: 15px;
+
+		&:nth-child(3n+1) {
+
+			object {
+				flex-direction: row-reverse;
+
+				section.entry-text {
+					position: relative;
+					width: 25%;
+					text-align: right;
+
+					span {
+						position: absolute;
+						z-index: 100;
+						bottom: 0;
+						left: 0;
+						width: 175%;
+						display: block;
+
+					}
+				}
+			}
+
+		}
+	}
+}
+
+
+.archive-grid {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	align-items: stretch;
+	padding-bottom: 4rem;
+
+	@include phone-only {
+		display: block;
+		width: 90%;
+		margin: 0 auto;
+	}
+
+
+	.archive-item {
+
+		width: 30%;
+		height: 340px;
+		margin: 1em 1.5%;
+		position: relative;
+
+		@include tablet-down {
+			//min-width: 28ch;
+		}
+
+		@include phone-only {
+			width: 100%;
+			display: block;
+			min-width: none;
+		}
+
+
+
+		a {
+			color: var(--page_link_color);
+			text-decoration: none;
+			display: block;
+			height: 100%;
+			transition: all 500ms ease-in-out;
+
+			&:hover {
+
+				color: var(--page_link_hover_color);
+
+				img {
+					-webkit-filter: brightness(1.2) saturate(1.5) opacity(1);
+					filter: brightness(1.2) saturate(1.5) opacity(1);
+					//-webkit-transition: image-filter-animation 500ms 1;
+					animation: image-filter-animation 500ms 1;
+				}
+
+			}
+
+		}
+
+		.featured-image {
+			img {
+				height: 340px;
+				width: 100%;
+				object-fit: cover;
+				-webkit-filter: brightness(1) saturate(1) opacity(1);
+				filter: brightness(1) saturate(1) opacity(1);
+			}
+		}
+
+		.entry-text {
+			position: absolute;
+			bottom: 0;
+			left: 0;
+			width: 100%;
+			min-height: 2.2em;
+			background: var(--page_background_color);
+			line-height: 1;
+
+			h3 {
+				margin: 0;
+				padding: 0.75em;
+				font-size: 2.5rem;
+				text-align: center;
+				opacity: 0.8;
+
+				&:hover {
+					opacity: 1;
+				}
+			}
+
+		}
+
+		&:nth-child(5n+4) {
+			margin-left: 3.5%;
+		}
+		&:nth-child(5n+5) {
+			margin-right: 3.5%;
+		}
+
+		@include tablet-down {
+			&:nth-child(5n+4),
+			&:nth-child(5n+5) {
+				margin: 1em 1.5%;
+			}
+		}
+	}
+}
+
+.archive-list {
+	width: 90%;
+	margin: 0 auto;
+	max-width: $max-page-width;
+
+	article,
+	article.portfolio {
+		display: flex;
+		align-items: center;
+		align-content: space-between;
+		margin: 0 0 2rem 0;
+		padding: 0 0 2rem 0;
+		border-bottom: 1px dotted var(--primary_button_background_color);
+
+		> div {
+			flex: 1;
+
+			&.featured-image {
+				margin-right: 2.5rem;
+				flex: none;
+				width: 30%;
+
+				img {
+					width: 100%;
+					height: auto;
+				}
+			}
+		}
+
+		header.article-header {
+			display: block;
+
+			h2 {
+				margin-top: 0;
+				font-size: 3.5rem;
+				line-height: 1.2;
+			}
+
+			.byline {
+				padding: 0;
+			}
+		}
+
+	}
+}

@@ -105,5 +105,6 @@
 	<?php include 'assets/svg/output/icons.svg'; ?>
 </div>
 <?php wp_footer(); ?>
+<?php get_template_part( 'parts/content', 'svg-include' ); ?>
 </body>
 </html> <!-- end page -->

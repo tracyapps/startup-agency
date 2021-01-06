@@ -5,6 +5,7 @@
 	.main-navigation {
 		background: var(--top_nav_bar_background);
 		font-family: var(--nav_item_font);
+		font-weight: normal;
 		//text-transform: uppercase;
 
 
@@ -164,7 +165,8 @@
 	}
 
 	+ #content {
-		.page-title {
+		.page-title,
+		.portfolio-title {
 			background: var(--page_background_color);
 			border-radius: 10px 10px 0 0;
 		}

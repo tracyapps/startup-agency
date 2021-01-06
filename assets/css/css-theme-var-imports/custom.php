@@ -48,7 +48,7 @@ if ( have_rows( 'page_body_design', 'option' ) ) :
 		if( $bold_page_title != '' ) {
 			$bold_page_title = 'bold';
 		} else {
-			$bold_page_title = 'light';
+			$bold_page_title = 'lighter';
 		}
 
 		$primary_button_background_color = get_sub_field( 'primary_button_background_color' );
@@ -72,7 +72,7 @@ if ( have_rows( 'page_footer_design', 'option' ) ) :
 endif;
 ?>
 <link rel="preconnect" href="https://fonts.gstatic.com">
-<link href="https://fonts.googleapis.com/css2?family=<?php echo esc_url( $nav_item_font_import_url ); ?>&family<?php echo esc_url( $body_text_font_import_url ); ?>&family<?php echo esc_url( $page_heading_text_font_import_url ); ?>&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=<?php echo $body_text_font_import_url; ?>&family=<?php echo $nav_item_font_import_url; ?>&family=<?php echo $page_heading_text_font_import_url; ?>&display=swap" rel="stylesheet">
 <style rel="stylesheet" type="text/css">
 	:root {
 		--header_background_color: 		<?php esc_html_e( $header_background_color ); ?>;
@@ -82,16 +82,16 @@ endif;
 		--nav_item_text_color:			<?php esc_html_e( $nav_item_text_color ); ?>;
 		--nav_item_hover_background_color: <?php esc_html_e( $nav_item_hover_background_color ); ?>;
 		--nav_item_hover_text_color:	<?php esc_html_e( $nav_item_hover_text_color ); ?>;
-		--nav_item_font:				'<?php esc_html_e( $nav_item_font_name ); ?>', sans-serif;
+		--nav_item_font:				<?php echo $nav_item_font_name; ?>;
 
 		--page_background_color:		<?php esc_html_e( $page_background_color ); ?>;
 		--page_text_color:				<?php esc_html_e( $page_text_color ); ?>;
 		--page_link_color:				<?php esc_html_e( $page_link_color ); ?>;
 		--page_link_hover_color:		<?php esc_html_e( $page_link_hover_color ); ?>;
-		--body_text_font:				'<?php esc_html_e( $body_text_font_name ); ?>', sans-serif;
+		--body_text_font:				<?php echo $body_text_font_name; ?>;
 		--body_text_default_size:		<?php esc_html_e( $body_text_default_size ); ?>px;
-		--page_heading_text_font:		'<?php esc_html_e( $page_heading_text_font_name ); ?>', sans-serif;
-		--page_heading_text_font_weight: light;
+		--page_heading_text_font:		<?php echo $page_heading_text_font_name; ?>;
+		--page_heading_text_font_weight: <?php esc_html_e( $bold_page_title ); ?>;
 
 		--primary_button_background_color: <?php esc_html_e( $primary_button_background_color ); ?>;
 		--primary_button_text_color:	<?php esc_html_e( $primary_button_text_color ); ?>;
