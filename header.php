@@ -24,17 +24,27 @@
 
 	<link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>">
 
-	<?php include( 'assets/css/css-theme-var-imports/default-theme.php' ); ?>
 	<?php
-	// ACF site options for themes. go
+	/*
+	 *  ** start THEME DESIGN **
+	 *  first we check on what options are selected with conditional statements,
+	 *  then we import the corresponding include file into the header.
+	 *
+	 * (This is all using ACF pro plugin to more easily handle custom site options)
+	 * */
+	// default theme filename, if none of the below conditions is met
+	$theme_choice = 'default-theme';
+
 	$design_option_setting = get_field( 'color_theme_or_custom_choice', 'option' );
 	if( '' != $design_option_setting ) {
 		if( 'color_theme' == $design_option_setting ) :
 			$theme_choice = get_field( 'color_theme', 'option' );
-			include( 'assets/css/css-theme-var-imports/' . esc_html( $theme_choice ) . '.php' );
-
-			endif;
+		elseif( 'custom' == $design_option_setting ) :
+			$theme_choice = 'custom';
+		endif;
 	}
+	// now we import that 'theme choice' variable file into the header
+	include( 'assets/css/css-theme-var-imports/' . esc_html( $theme_choice ) . '.php' );
 	?>
 	<?php wp_head(); ?>
 
