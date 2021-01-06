@@ -11,9 +11,10 @@ $background_choices_available = array (
 );
 
 $color_theme_list = array (
-	'none' 		=> 'theme 1',
-	'inverse' 	=> 'two',
-	'bright'	=> 'third',
+	'default-theme' 		=> 'Default',
+	'retrorocket-theme' 	=> 'Retro Rocket',
+	'boldnblue-theme'		=> 'Bold n Blue',
+	'youthful-theme'		=> 'Youthful',
 );
 
 $nav_font_choices = array(
@@ -648,7 +649,6 @@ if( function_exists('acf_add_local_field_group') ):
 				'placement' => 'top',
 				'endpoint' => 0,
 			),
-
 
 
 			array (

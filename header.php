@@ -25,12 +25,22 @@
 	<link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>">
 
 	<?php include( 'assets/css/css-theme-var-imports/default-theme.php' ); ?>
+	<?php
+	// ACF site options for themes. go
+	$design_option_setting = get_field( 'color_theme_or_custom_choice', 'option' );
+	if( '' != $design_option_setting ) {
+		if( 'color_theme' == $design_option_setting ) :
+			$theme_choice = get_field( 'color_theme', 'option' );
+			include( 'assets/css/css-theme-var-imports/' . esc_html( $theme_choice ) . '.php' );
+
+			endif;
+	}
+	?>
 	<?php wp_head(); ?>
 
-
 </head>
-
 <body <?php body_class(); ?>>
+
 
 <header class="site-header" role="banner">
 	<div class="site-logo">
@@ -75,4 +85,3 @@ if( has_post_thumbnail() ) :
 	);
 
 endif;
-?>
