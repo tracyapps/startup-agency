@@ -1,6 +1,21 @@
 .site-header {
 	background: var(--header_background_color);
 
+	a {
+		text-decoration: none;
+	}
+
+	.site-logo {
+		h1 {
+			//text-transform: uppercase;
+			font-weight: lighter;
+
+
+			a {
+				color: var(--header_text_color);
+			}
+		}
+	}
 
 	.main-navigation {
 		background: var(--top_nav_bar_background);

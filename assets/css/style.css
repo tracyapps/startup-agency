@@ -396,6 +396,12 @@ input[type="submit"] {
 
 .site-header {
   background: var(--header_background_color); }
+  .site-header a {
+    text-decoration: none; }
+  .site-header .site-logo h1 {
+    font-weight: lighter; }
+    .site-header .site-logo h1 a {
+      color: var(--header_text_color); }
   .site-header .main-navigation {
     background: var(--top_nav_bar_background);
     font-family: var(--nav_item_font);

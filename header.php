@@ -53,7 +53,7 @@
 
 
 <header class="site-header" role="banner">
-	<div class="site-logo">
+	<div class="site-logo container">
 		<?php
 		$logo_image = get_field( 'site_logo', 'option' );
 		if ( '' != $logo_image ):
