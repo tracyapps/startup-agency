@@ -1,0 +1,7 @@
+/*@import "node_modules/breakpoint-sass/stylesheets/breakpoint";
+@import "node_modules/scut/dist/scut";
+@import "general/general";
+@import "modules/modules";*/
+.block-editor .wp-block {
+  width: 85%;
+  max-width: 1000px; }

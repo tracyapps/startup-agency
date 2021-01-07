@@ -99,6 +99,7 @@ gulp.task( 'browsersync', function () {
 		'./assets/js/*.js',
 		'**/*.php',
 		'assets/images/**/*.{png,jpg,gif,svg,webp}',
+		'./assets/css/css-theme-var-imports/*.php',
 	];
 
 	browserSync.init( files, {
@@ -116,6 +117,9 @@ gulp.task( 'watch', function () {
 
 	// Watch .scss files
 	gulp.watch( './assets/scss/**/*.scss', ['styles'] );
+
+	// Watch css variable import files
+	gulp.watch( './assets/css/css-theme-var-imports/*.php' );
 
 	// Watch svg files
 	gulp.watch( './assets/svg/originals/*.svg', ['svgSprite'] );

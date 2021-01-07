@@ -22,3 +22,7 @@ function site_scripts() {
 }
 
 add_action( 'wp_enqueue_scripts', 'site_scripts', 999 );
+
+add_action( 'enqueue_block_editor_assets', function() {
+	wp_enqueue_style( 'start-editor', get_stylesheet_directory_uri() . "/assets/css/editorstyles.min.css", false, '1.0', 'all' );
+} );

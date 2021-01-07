@@ -41,5 +41,4 @@
 		--footer_link_color:			#b70344;
 		--footer_link_hover_color:		#657ae7;
 	}
-
 </style>
