@@ -10,15 +10,15 @@
 	:root {
 		--header_background_color:		#657ae7;
 		--header_text_color:			#fff;
-		--top_nav_bar_background:		#d1cef5;
-		--nav_item_background_color:	#d1cef5;
-		--nav_item_text_color:			#373f88;
-		--nav_item_hover_background_color: #b70344;
-		--nav_item_hover_text_color:	#ffcc81;
+		--top_nav_bar_background:		#7a8dec;
+		--nav_item_background_color:	#7a8dec;
+		--nav_item_text_color:			#d1cef5;
+		--nav_item_hover_background_color: #4e0025;
+		--nav_item_hover_text_color: 	#a4bcff;
 		--nav_item_font:				'Montserrat', sans-serif;
 
 		--page_background_color:		#fff;
-		--page_text_color: 				#40434a;
+		--page_text_color: 				#73767d;
 		--page_link_color:				#b70344;
 		--page_link_hover_color:		#4e0025;
 		--body_text_font:				'Roboto Condensed', sans-serif;
