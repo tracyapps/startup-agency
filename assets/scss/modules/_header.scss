@@ -42,8 +42,18 @@
 				list-style-type: none;
 				margin: 0 1px 0 0;
 				display: flex;
-				flex: auto;
+				flex: 1;
 				justify-content: space-evenly;
+				background: var(--nav_item_background_color);
+				transform: skewX(-7deg) skewY(0deg);
+				transition: background $transition-speed ease-in-out;
+				border-radius: 3px;
+
+				&:hover,
+				&:focus {
+					background: var(--nav_item_hover_background_color);
+				}
+
 
 				a {
 					transition: all $transition-speed ease-in-out;
@@ -54,16 +64,16 @@
 					justify-content: center;
 					align-items: center;
 					padding: 0.5em 2em;
-					background: var(--nav_item_background_color);
+					transform: skewX(7deg) skewY(0deg);
 					color: var(--nav_item_text_color);
 
 					&:hover,
 					&:focus,
 					&:active,
 					&:target {
-						background: var(--nav_item_hover_background_color);
 						color: var(--nav_item_hover_text_color);
 					}
+
 				}
 
 			}

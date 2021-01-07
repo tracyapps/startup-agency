@@ -421,10 +421,16 @@ input[type="submit"] {
         margin: 0 1px 0 0;
         display: -ms-flexbox;
         display: flex;
-        -ms-flex: auto;
-        flex: auto;
+        -ms-flex: 1;
+        flex: 1;
         -ms-flex-pack: space-evenly;
-        justify-content: space-evenly; }
+        justify-content: space-evenly;
+        background: var(--nav_item_background_color);
+        transform: skewX(-7deg) skewY(0deg);
+        transition: background 250ms ease-in-out;
+        border-radius: 3px; }
+        .site-header .main-navigation ul li:hover, .site-header .main-navigation ul li:focus {
+          background: var(--nav_item_hover_background_color); }
         .site-header .main-navigation ul li a {
           transition: all 250ms ease-in-out;
           text-decoration: none;
@@ -438,10 +444,9 @@ input[type="submit"] {
           -ms-flex-align: center;
           align-items: center;
           padding: 0.5em 2em;
-          background: var(--nav_item_background_color);
+          transform: skewX(7deg) skewY(0deg);
           color: var(--nav_item_text_color); }
           .site-header .main-navigation ul li a:hover, .site-header .main-navigation ul li a:focus, .site-header .main-navigation ul li a:active, .site-header .main-navigation ul li a:target {
-            background: var(--nav_item_hover_background_color);
             color: var(--nav_item_hover_text_color); }
     @media (max-width: 900px) {
       .site-header .main-navigation .mobile-menu-toggle {
