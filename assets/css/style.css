@@ -395,8 +395,6 @@ input[type="submit"] {
   width: 100%; }
 
 .widget_search input[type="submit"] {
-  font-size: 80%;
-  padding: 8px 10px;
   margin: 0 0 0 -5px; }
 
 .site-header {
@@ -548,7 +546,9 @@ footer.site-footer {
     -ms-flex-align: stretch;
     align-items: stretch;
     -ms-flex-pack: justify;
-    justify-content: space-between; }
+    justify-content: space-between;
+    font-size: 95%;
+    line-height: 1.1; }
     @media (max-width: 900px) {
       footer.site-footer .footer-widget-area {
         display: block; } }
@@ -576,7 +576,8 @@ footer.site-footer {
       padding: 0;
       list-style: none; }
     footer.site-footer .footer-widget-area h4.widgettitle {
-      text-align: center; }
+      text-transform: uppercase;
+      font-size: 2rem; }
     footer.site-footer .footer-widget-area div.column div.widget:first-child h4.widgettitle {
       margin-top: 0; }
   footer.site-footer .social-links {
