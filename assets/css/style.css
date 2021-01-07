@@ -325,16 +325,18 @@ input[type="datetime"],
 input[type="datetime-local"],
 select,
 textarea {
-  padding: 0.5rem 1rem;
+  padding: 0.75rem 1.25rem;
   outline: none;
-  border: 1px solid rgba(33, 37, 41, 0.2);
+  border: 1px solid transparent;
   border-radius: 3px;
-  background: #fff;
-  font-size: 20px;
-  font-family: "Work Sans", sans-serif;
+  background: var(--page_background_color);
+  color: var(--page_text_color);
+  font-size: var(--body_text_default_size);
+  font-family: var(--body_text_font);
   margin-left: 1rem;
-  box-shadow: none;
-  -webkit-appearance: none; }
+  box-shadow: 0 0 1px 1px rgba(0, 0, 0, 0.15);
+  -webkit-appearance: none;
+  transition: all 250ms ease-in-out; }
   input[type="email"]:hover,
   input[type="number"]:hover,
   input[type="password"]:hover,
@@ -349,7 +351,7 @@ textarea {
   input[type="datetime-local"]:hover,
   select:hover,
   textarea:hover {
-    border: 1px solid #4dabf7; }
+    border: 1px solid var(--primary_button_background_color); }
   input[type="email"]:focus,
   input[type="number"]:focus,
   input[type="password"]:focus,
@@ -365,12 +367,15 @@ textarea {
   select:focus,
   textarea:focus {
     outline: none;
-    border: 1px dotted #ffa94d;
-    background: #fff; }
+    border: 1px dotted var(--primary_button_background_color);
+    box-shadow: 0 0 3px 2px rgba(0, 0, 0, 0.15); }
 
+button,
 input[type="submit"] {
-  font-size: 20px;
-  font-family: "Work Sans", sans-serif; }
+  font-size: var(--body_text_default_size);
+  font-family: var(--body_text_font);
+  border: none;
+  padding: 0.75rem 1.25rem; }
 
 .frm_form_field.frm_left_container input:not([type=radio]):not([type=checkbox]), .frm_form_field.frm_left_container:not(.frm_dynamic_select_container) select, .frm_form_field.frm_left_container textarea, .frm_form_field.frm_left_container .wp-editor-wrap, .frm_form_field.frm_left_container .frm_opt_container, .frm_form_field.frm_left_container .frm_dropzone, .frm_form_field.frm_left_container .frm-g-recaptcha, .frm_form_field.frm_left_container .g-recaptcha, .frm_form_field.frm_left_container .chosen-container, .frm_form_field.frm_left_container .frm_combo_inputs_container, .frm_form_field.frm_right_container input:not([type=radio]):not([type=checkbox]), .frm_form_field.frm_right_container:not(.frm_dynamic_select_container) select, .frm_form_field.frm_right_container textarea, .frm_form_field.frm_right_container .wp-editor-wrap, .frm_form_field.frm_right_container .frm_opt_container, .frm_form_field.frm_right_container .frm_dropzone, .frm_form_field.frm_right_container .frm-g-recaptcha, .frm_form_field.frm_right_container .g-recaptcha, .frm_form_field.frm_right_container .chosen-container, .frm_form_field.frm_right_container .frm_combo_inputs_container {
   max-width: 100%; }
