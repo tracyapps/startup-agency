@@ -30,6 +30,7 @@ $nav_font_choices = array(
 );
 
 $heading_font_choices = array(
+	'Montserrat:ital,wght@0,200;0,900;1,200;1,900' => '"Montserrat", sans-serif',
 	'Roboto:ital,wght@0,100;0,700;1,100;1,700' => '"Roboto", sans-serif',
 	'Work+Sans:ital,wght@0,200;0,800;1,200;1,800' => '"Work Sans", sans-serif',
 	'Poppins:ital,wght@0,200;0,700;1,200;1,700' => '"Poppins", sans-serif',
@@ -44,6 +45,7 @@ $heading_font_choices = array(
 );
 
 $body_font_choices = array(
+	'Roboto+Condensed:ital,wght@0,300;0,700;1,300;1,700' => '"Roboto Condensed", sans-serif',
 	'Roboto:ital,wght@0,300;0,900;1,300;1,900' => '"Roboto", sans-serif',
 	'Work+Sans:ital,wght@0,300;0,800;1,300;1,800' => '"Work Sans", sans-serif',
 	'Montserrat:ital,wght@0,300;0,800;1,300;1,800' => '"Montserrat", sans-serif',

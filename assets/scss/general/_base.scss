@@ -111,11 +111,11 @@ button {
 	&.secondary {
 		font-size: 90%;
 		background: var(--secondary_button_background_color);
-		color: var(--secondary_button_text_color);
+		color: var(--secondary_button_text_color) !important;
 
 		&:hover {
 			background: var(--secondary_button_hover_background_color);
-			color: var(--secondary_button_hover_text_color);
+			color: var(--secondary_button_hover_text_color) !important;
 		}
 	}
 }

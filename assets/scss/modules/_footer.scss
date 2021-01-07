@@ -6,6 +6,7 @@ footer.site-footer {
 
 	a {
 		color: var(--footer_link_color);
+		text-decoration: none;
 
 		&:hover {
 			color: var(--footer_link_hover_color);

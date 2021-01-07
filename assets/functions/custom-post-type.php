@@ -45,6 +45,7 @@ function start_custom_post_types() {
 		'rewrite'             => array( 'slug' => 'the-team' ),
 		'can_export'          => true,
 		'has_archive'         => true,
+		'show_in_rest' 		  => true,
 		'exclude_from_search' => false,
 		'publicly_queryable'  => true,
 		'capability_type'     => 'post',

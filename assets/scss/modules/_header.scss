@@ -173,9 +173,18 @@
 	z-index: -1;
 	margin-bottom: -8em;
 
+	body.home & {
+		margin-bottom: -12em;
+
+		img.page_featured_image {
+			width: 100%;
+			max-height: 90vh;
+			object-fit: cover;
+		}
+	}
 	img.page_featured_image {
 		width: 100%;
-		max-height: 30vh;
+		max-height: 40vh;
 		object-fit: cover;
 	}
 
