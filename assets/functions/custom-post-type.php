@@ -120,36 +120,6 @@ add_action( 'init', 'start_custom_post_types' );
 
 
 /**
- * custom Tax: project_type (hierarchical)
- */
-
-register_taxonomy( 'service',
-	array( 'portfolio' ),
-	/* if you change the name of register_post_type( 'custom_type', then you have to change this */
-	array(
-		'hierarchical' => true,
-		/* if this is false, it acts like tags */
-		'labels' => array(
-			'name' => __( 'Service', 'start' ),
-			'singular_name' => __( 'Service', 'start' ),
-			'search_items' => __( 'Search Services', 'start' ),
-			'all_items' => __( 'All Services', 'start' ),
-			'parent_item' => __( 'Parent Service', 'start' ),
-			'parent_item_colon' => __( 'Parent Service:', 'start' ),
-			'edit_item' => __( 'Edit Service', 'start' ),
-			'update_item' => __( 'Update Service', 'start' ),
-			'add_new_item' => __( 'Add New Service', 'start' ),
-			'new_item_name' => __( 'New Service', 'start' )
-		),
-		'show_admin_column' => true,
-		'show_ui' => true,
-		'query_var' => true,
-		'rewrite' => array( 'slug' => 'service' ),
-	)
-);
-
-
-/**
  * custom Tax: group
  */
 register_taxonomy(

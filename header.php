@@ -80,7 +80,7 @@
 <div class="site-content">
 
 <?php
-if( has_post_thumbnail() ) :
+if( has_post_thumbnail() && is_singular() ) :
 	$featuredimage = get_the_post_thumbnail_url( get_the_ID(), 'full' );
 	$alt_text = get_post_meta( $thumbnail->ID, '_wp_attachment_image_alt', true );
 

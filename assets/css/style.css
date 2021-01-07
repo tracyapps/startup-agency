@@ -595,60 +595,12 @@ footer.site-footer {
     display: block;
     clear: both;
     letter-spacing: 0;
-    font-family: "Work Sans", sans-serif;
+    font-family: var(--body_text_font);
     font-weight: normal;
     margin-bottom: -2rem; }
 
 .centered-title {
   text-align: center; }
-
-.page-children-grid {
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-wrap: wrap;
-  flex-wrap: wrap;
-  -ms-flex-align: start;
-  align-items: flex-start;
-  justify-items: center;
-  -ms-flex-pack: center;
-  justify-content: center; }
-  .page-children-grid .child-page-box {
-    text-align: center;
-    margin: 1em 3vw;
-    width: 15vw;
-    min-width: 200px;
-    max-width: 390px; }
-    @media (max-width: 600px) {
-      .page-children-grid .child-page-box {
-        width: auto; } }
-    .page-children-grid .child-page-box h6 {
-      padding-top: 0.75em;
-      margin: 0;
-      line-height: 1.2; }
-      .page-children-grid .child-page-box h6 a {
-        color: #212529;
-        text-decoration: none; }
-        .page-children-grid .child-page-box h6 a:hover {
-          color: #5f3dc4; }
-    .page-children-grid .child-page-box .child-page-link {
-      width: 15vw;
-      height: 15vw;
-      min-width: 200px;
-      min-height: 200px;
-      max-width: 390px;
-      max-height: 390px;
-      transition: all 300ms ease-in-out; }
-      .page-children-grid .child-page-box .child-page-link.round {
-        border-radius: 50%;
-        box-shadow: 1px 1px 0 rgba(0, 0, 0, 0.5); }
-        .page-children-grid .child-page-box .child-page-link.round svg {
-          fill: #fff !important;
-          height: 65%;
-          width: 65%;
-          margin: 18% auto;
-          filter: drop-shadow(0 1px 0 rgba(0, 0, 0, 0.25)) url(#inset-shadow); }
-      .page-children-grid .child-page-box .child-page-link:hover {
-        transform: scale(1.1); }
 
 .taxonomy-description {
   text-align: center;
@@ -737,6 +689,93 @@ footer.site-footer {
         width: 25%;
         text-align: right; }
         .archive-featured .featured-item:nth-child(3n+1) object section.entry-text span {
+          position: absolute;
+          z-index: 100;
+          bottom: 0;
+          left: 0;
+          width: 175%;
+          display: block; }
+
+.archive-person {
+  margin: 2em 0; }
+  @media (min-width: 900px) {
+    .archive-person {
+      display: -ms-flexbox;
+      display: flex;
+      -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+      width: 100%;
+      justify-items: center;
+      -ms-flex-align: stretch;
+      align-items: stretch; } }
+  .archive-person .archive-item {
+    background: #0f0; }
+    @media (min-width: 900px) {
+      .archive-person .archive-item {
+        width: 45%; } }
+    @media (min-width: 1200px) {
+      .archive-person .archive-item {
+        width: 30%; } }
+    .archive-person .archive-item a {
+      text-decoration: none;
+      color: var(--page_link_color);
+      display: block;
+      height: 100%; }
+      .archive-person .archive-item a:hover {
+        color: var(--page_link_hover_color); }
+        .archive-person .archive-item a:hover .featured-image img {
+          filter: brightness(1.2) saturate(1.5) opacity(1);
+          animation: image-filter-animation 500ms 1; }
+    .archive-person .archive-item object {
+      display: -ms-flexbox;
+      display: flex;
+      -ms-flex-align: end;
+      align-items: flex-end;
+      -ms-flex-direction: row;
+      flex-direction: row;
+      height: 100%; }
+      .archive-person .archive-item object > section.featured-image {
+        width: 75%;
+        height: 100%; }
+        .archive-person .archive-item object > section.featured-image img {
+          filter: brightness(1) saturate(1) opacity(1);
+          min-height: 70%;
+          min-width: 90%;
+          object-fit: cover; }
+      .archive-person .archive-item object > section.entry-text {
+        position: relative;
+        width: 25%; }
+        .archive-person .archive-item object > section.entry-text span {
+          position: absolute;
+          z-index: 100;
+          bottom: 0;
+          right: 0;
+          width: 175%;
+          display: block; }
+        .archive-person .archive-item object > section.entry-text h2 {
+          margin: 0;
+          padding: 0;
+          line-height: 1.1; }
+        .archive-person .archive-item object > section.entry-text .person-title {
+          text-align: left;
+          padding-right: 0.5rem; }
+        .archive-person .archive-item object > section.entry-text h2,
+        .archive-person .archive-item object > section.entry-text h3 {
+          display: inline-block;
+          background: var(--page_background_color);
+          padding: 0.5rem 1rem;
+          text-shadow: none; }
+  .archive-person .team-member {
+    padding: 2rem 0;
+    margin-bottom: 15px; }
+    .archive-person .team-member:nth-child(3n+1) object {
+      -ms-flex-direction: row-reverse;
+      flex-direction: row-reverse; }
+      .archive-person .team-member:nth-child(3n+1) object section.entry-text {
+        position: relative;
+        width: 25%;
+        text-align: right; }
+        .archive-person .team-member:nth-child(3n+1) object section.entry-text span {
           position: absolute;
           z-index: 100;
           bottom: 0;

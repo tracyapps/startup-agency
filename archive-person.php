@@ -4,17 +4,16 @@
 		<main id="main" class="main-content" role="main">
 
 			<header>
-				<?php start_the_archive_title( '<h1 class="page-title">', '</h1>', 'smaller'); ?>
-				<?php the_archive_description( '<div class="taxonomy-description">', '</div>' ); ?>
+				<h1 class="page-title">The team</h1>
 			</header>
 
 			<?php if ( have_posts() ) :
-				echo '<secton class="archive-list">';
+				echo '<secton class="archive-person>';
 				while ( have_posts() ) : the_post(); ?>
 
-					<?php get_template_part( 'parts/loop', 'archive' ); ?>
+					<?php get_template_part( 'parts/loop', 'archive-person' ); ?>
 
-			<?php endwhile; ?>
+				<?php endwhile; ?>
 
 				</secton>
 
@@ -25,7 +24,6 @@
 				<?php get_template_part( 'parts/content', 'missing' ); ?>
 
 			<?php endif; ?>
-
 		</main> <!-- end #main -->
 	</div> <!-- end #content -->
 
