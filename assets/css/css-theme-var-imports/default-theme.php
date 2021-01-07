@@ -10,8 +10,8 @@
 	:root {
 		--header_background_color:		#657ae7;
 		--header_text_color:			#fff;
-		--top_nav_bar_background:		#7a8dec;
-		--nav_item_background_color:	#7a8dec;
+		--top_nav_bar_background:		#7084e6;
+		--nav_item_background_color:	#7084e6;
 		--nav_item_text_color:			#d1cef5;
 		--nav_item_hover_background_color: #4e0025;
 		--nav_item_hover_text_color: 	#a4bcff;
