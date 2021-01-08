@@ -184,10 +184,11 @@
 	margin-bottom: -8em;
 
 	body.home & {
-		margin-bottom: -12em;
+		margin-bottom: -50vh;
 
 		img.page_featured_image {
 			width: 100%;
+			min-height: 70vh;
 			max-height: 90vh;
 			object-fit: cover;
 		}
