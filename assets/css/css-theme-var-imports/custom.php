@@ -25,8 +25,8 @@ if ( have_rows( 'top_navigation_bar_options', 'option' ) ) :
 		$nav_item_hover_background_color = get_sub_field( 'nav_item_hover_background_color' );
 		$nav_item_hover_text_color = get_sub_field( 'nav_item_hover_text_color' );
 		$nav_item_font_array = get_sub_field( 'nav_item_font' ); // font choice array, value/label
-			$nav_item_font_import_url = $nav_item_font_array[value];
-			$nav_item_font_name = $nav_item_font_array[label];
+			$nav_item_font_import_url = $nav_item_font_array->value;
+			$nav_item_font_name = $nav_item_font_array->label;
 	endwhile;
 endif;
 if ( have_rows( 'page_body_design', 'option' ) ) :
@@ -36,13 +36,13 @@ if ( have_rows( 'page_body_design', 'option' ) ) :
 		$page_link_color = get_sub_field( 'page_link_color' );
 		$page_link_hover_color = get_sub_field( 'page_link_hover_color' );
 		$body_text_font_array = get_sub_field( 'body_text_font' ); // font array, value/label
-			$body_text_font_import_url = $body_text_font_array[value];
-			$body_text_font_name = $body_text_font_array[label];
+			$body_text_font_import_url = $body_text_font_array->value;
+			$body_text_font_name = $body_text_font_array->label;
 
 		$body_text_default_size = get_sub_field( 'body_text_default_size' );
 		$page_heading_text_font_array = get_sub_field( 'page_heading_text_font' ); // font array, value/label
-			$page_heading_text_font_import_url = $page_heading_text_font_array[value];
-			$page_heading_text_font_name = $page_heading_text_font_array[label];
+			$page_heading_text_font_import_url = $page_heading_text_font_array->value;
+			$page_heading_text_font_name = $page_heading_text_font_array->label;
 
 		$bold_page_title = get_sub_field( 'bold_page_title' ); // yes or no
 		if( $bold_page_title != '' ) {
